@@ -1,6 +1,6 @@
 from PIL import Image
 
-input = Image.open("uw_place_full_size.png")
+input = Image.open("canada_uni_full_size.png")
 input.show()
 pixel_map = input.load()
 width, height = input.size
@@ -18,7 +18,9 @@ for h in range(height):
         color_w, color_h = w2 + 1, h2+1
         
         #output_pixel_map[color_w, color_h] = (r,g,b,a)
+
+        #Set to purple for testing
         output_pixel_map[color_w, color_h] = (int(144),int(0),int(255),a)
 
-output.save("uw_place_template_full_size.png", format="png")
+output.save("canada_uni_full_size_template.png", format="png")
 output.show()
