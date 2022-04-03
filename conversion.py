@@ -17,10 +17,10 @@ for h in range(height):
         w2,h2 = w*3,h*3
         color_w, color_h = w2 + 1, h2+1
         
-        #output_pixel_map[color_w, color_h] = (r,g,b,a)
+        output_pixel_map[color_w, color_h] = (r,g,b,a)
 
         #Set to purple for testing
-        output_pixel_map[color_w, color_h] = (int(144),int(0),int(255),a)
+        #output_pixel_map[color_w, color_h] = (int(144),int(0),int(255),a)
 
 output.save("canada_uni_full_size_template.png", format="png")
 output.show()
